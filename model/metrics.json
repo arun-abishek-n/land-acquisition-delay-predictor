@@ -1,188 +1,188 @@
 {
   "logistic_regression": {
-    "accuracy": 0.642,
+    "accuracy": 0.601,
     "confusion_matrix": [
       [
-        286,
-        187
+        270,
+        203
       ],
       [
-        171,
-        356
+        196,
+        331
       ]
     ],
     "classification_report": {
       "0": {
-        "precision": 0.6258205689277899,
-        "recall": 0.6046511627906976,
-        "f1-score": 0.6150537634408602,
-        "support": 473
+        "precision": 0.5793991416309013,
+        "recall": 0.5708245243128964,
+        "f1-score": 0.5750798722044729,
+        "support": 473.0
       },
       "1": {
-        "precision": 0.6556169429097606,
-        "recall": 0.6755218216318786,
-        "f1-score": 0.6654205607476635,
-        "support": 527
+        "precision": 0.6198501872659176,
+        "recall": 0.6280834914611005,
+        "f1-score": 0.6239396795475967,
+        "support": 527.0
       },
-      "accuracy": 0.642,
+      "accuracy": 0.601,
       "macro avg": {
-        "precision": 0.6407187559187753,
-        "recall": 0.6400864922112881,
-        "f1-score": 0.6402371620942618,
-        "support": 1000
+        "precision": 0.5996246644484095,
+        "recall": 0.5994540078869985,
+        "f1-score": 0.5995097758760348,
+        "support": 1000.0
       },
       "weighted avg": {
-        "precision": 0.6415232580162885,
-        "recall": 0.642,
-        "f1-score": 0.6415970656215455,
-        "support": 1000
+        "precision": 0.6007168426805549,
+        "recall": 0.601,
+        "f1-score": 0.6008289906742991,
+        "support": 1000.0
       }
     }
   },
   "decision_tree": {
-    "accuracy": 0.562,
-    "confusion_matrix": [
-      [
-        268,
-        205
-      ],
-      [
-        233,
-        294
-      ]
-    ]
-  },
-  "random_forest": {
-    "accuracy": 0.619,
+    "accuracy": 0.554,
     "confusion_matrix": [
       [
         263,
         210
       ],
       [
-        171,
-        356
+        236,
+        291
+      ]
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.585,
+    "confusion_matrix": [
+      [
+        254,
+        219
+      ],
+      [
+        196,
+        331
       ]
     ],
     "classification_report": {
       "0": {
-        "precision": 0.6059907834101382,
-        "recall": 0.5560253699788583,
-        "f1-score": 0.5799338478500552,
-        "support": 473
+        "precision": 0.5644444444444444,
+        "recall": 0.5369978858350951,
+        "f1-score": 0.5503791982665223,
+        "support": 473.0
       },
       "1": {
-        "precision": 0.6289752650176679,
-        "recall": 0.6755218216318786,
-        "f1-score": 0.6514181152790485,
-        "support": 527
+        "precision": 0.6018181818181818,
+        "recall": 0.6280834914611005,
+        "f1-score": 0.6146703806870938,
+        "support": 527.0
       },
-      "accuracy": 0.619,
+      "accuracy": 0.585,
       "macro avg": {
-        "precision": 0.6174830242139031,
-        "recall": 0.6157735958053685,
-        "f1-score": 0.6156759815645518,
-        "support": 1000
+        "precision": 0.5831313131313132,
+        "recall": 0.5825406886480978,
+        "f1-score": 0.582524789476808,
+        "support": 1000.0
       },
       "weighted avg": {
-        "precision": 0.6181036052173062,
-        "recall": 0.619,
-        "f1-score": 0.6176060567851347,
-        "support": 1000
+        "precision": 0.584140404040404,
+        "recall": 0.585,
+        "f1-score": 0.5842606514021633,
+        "support": 1000.0
       }
     },
     "feature_importance": [
       {
         "Feature": "Approval_Days",
-        "Importance": 0.12852093546322133
+        "Importance": 0.13024923142606995
       },
       {
         "Feature": "Land_Area_Acres",
-        "Importance": 0.10986108113415109
+        "Importance": 0.10798239688621983
       },
       {
         "Feature": "Planned_Duration_Days",
-        "Importance": 0.10795970962943809
-      },
-      {
-        "Feature": "Number_of_Parcels",
-        "Importance": 0.07239763739459198
+        "Importance": 0.10622788895710128
       },
       {
         "Feature": "Affected_Families",
-        "Importance": 0.07053339082479278
+        "Importance": 0.0721479323818473
+      },
+      {
+        "Feature": "Number_of_Parcels",
+        "Importance": 0.07195951028074637
       },
       {
         "Feature": "Number_of_Owners",
-        "Importance": 0.06391185896791664
+        "Importance": 0.06272100846604794
       },
       {
         "Feature": "Objections_Received",
-        "Importance": 0.059053161736567814
+        "Importance": 0.058390224173791354
       },
       {
         "Feature": "Government_Clearances",
-        "Importance": 0.05755762875291418
+        "Importance": 0.057963677720212124
       },
       {
         "Feature": "Documents_Missing",
-        "Importance": 0.04549496945187759
+        "Importance": 0.043855981247251534
       },
       {
         "Feature": "Legal_Cases",
-        "Importance": 0.04163085178096895
+        "Importance": 0.041941009221350696
       },
       {
         "Feature": "Ownership_Disputes",
-        "Importance": 0.04074566332175885
+        "Importance": 0.0383469830155776
       },
       {
         "Feature": "Rehabilitation_Required_Yes",
-        "Importance": 0.027615385428883255
+        "Importance": 0.02932579506787861
       },
       {
         "Feature": "Previous_Acquisition_Delay_Yes",
-        "Importance": 0.021584935057704636
+        "Importance": 0.023456669241616792
       },
       {
         "Feature": "Compensation_Dispute_Yes",
-        "Importance": 0.01778587978509999
+        "Importance": 0.019175576311241064
       },
       {
         "Feature": "Location_Zone_Urban",
-        "Importance": 0.017230156338633975
-      },
-      {
-        "Feature": "Land_Type_Residential",
-        "Importance": 0.016886626030649672
-      },
-      {
-        "Feature": "Land_Type_Mixed",
-        "Importance": 0.01613234124082468
+        "Importance": 0.01701996945593928
       },
       {
         "Feature": "Project_Type_Road",
-        "Importance": 0.015977295241812902
+        "Importance": 0.016802166503070117
+      },
+      {
+        "Feature": "Land_Type_Residential",
+        "Importance": 0.016368083395374225
+      },
+      {
+        "Feature": "Land_Type_Mixed",
+        "Importance": 0.015955752100769754
       },
       {
         "Feature": "Location_Zone_Semi-Urban",
-        "Importance": 0.015676914758722304
-      },
-      {
-        "Feature": "Project_Type_Housing",
-        "Importance": 0.014136101618047462
+        "Importance": 0.015368300644744011
       },
       {
         "Feature": "Project_Type_Railway",
-        "Importance": 0.013707142552119203
+        "Importance": 0.014610940978294224
       },
       {
-        "Feature": "Land_Type_Commercial",
-        "Importance": 0.012964549229553266
+        "Feature": "Project_Type_Housing",
+        "Importance": 0.013552012521418768
       },
       {
         "Feature": "Project_Type_Industrial",
-        "Importance": 0.012635784259749502
+        "Importance": 0.013342713603464508
+      },
+      {
+        "Feature": "Land_Type_Commercial",
+        "Importance": 0.013236176399972604
       }
     ]
   },
@@ -200,45 +200,45 @@
   },
   "deployed_final_model": {
     "algorithm": "LogisticRegression(max_iter=1000)",
-    "accuracy": 0.642,
+    "accuracy": 0.601,
     "confusion_matrix": [
       [
-        286,
-        187
+        270,
+        203
       ],
       [
-        171,
-        356
+        196,
+        331
       ]
     ],
     "classification_report": {
       "0": {
-        "precision": 0.6258205689277899,
-        "recall": 0.6046511627906976,
-        "f1-score": 0.6150537634408602,
-        "support": 473
+        "precision": 0.5793991416309013,
+        "recall": 0.5708245243128964,
+        "f1-score": 0.5750798722044729,
+        "support": 473.0
       },
       "1": {
-        "precision": 0.6556169429097606,
-        "recall": 0.6755218216318786,
-        "f1-score": 0.6654205607476635,
-        "support": 527
+        "precision": 0.6198501872659176,
+        "recall": 0.6280834914611005,
+        "f1-score": 0.6239396795475967,
+        "support": 527.0
       },
-      "accuracy": 0.642,
+      "accuracy": 0.601,
       "macro avg": {
-        "precision": 0.6407187559187753,
-        "recall": 0.6400864922112881,
-        "f1-score": 0.6402371620942618,
-        "support": 1000
+        "precision": 0.5996246644484095,
+        "recall": 0.5994540078869985,
+        "f1-score": 0.5995097758760348,
+        "support": 1000.0
       },
       "weighted avg": {
-        "precision": 0.6415232580162885,
-        "recall": 0.642,
-        "f1-score": 0.6415970656215455,
-        "support": 1000
+        "precision": 0.6007168426805549,
+        "recall": 0.601,
+        "f1-score": 0.6008289906742991,
+        "support": 1000.0
       }
     },
     "note": "Computed by this export script using the same evaluation method as the notebook (accuracy_score/confusion_matrix/classification_report), applied to the actual deployed final_model + new_scaler pipeline. Not a printed cell output in the original notebook."
   },
-  "_ml_backend": "numpy_fallback"
+  "_ml_backend": "sklearn"
 }
