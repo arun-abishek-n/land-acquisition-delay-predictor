@@ -434,7 +434,6 @@ def main():
     )
     st.sidebar.divider()
     st.sidebar.caption("Land Acquisition Delay Predictor")
-    st.sidebar.caption("Backend model: Logistic Regression (scikit-learn)")
 
     try:
         artifacts = load_artifacts()
@@ -450,6 +449,10 @@ def main():
         with st.expander("Technical details"):
             st.code(str(e))
         st.stop()
+
+    backend = artifacts["metrics"].get("_ml_backend", "unknown")
+    backend_label = "scikit-learn" if backend == "sklearn" else "NumPy fallback (scikit-learn unavailable at training time)"
+    st.sidebar.caption(f"Backend model: Logistic Regression ({backend_label})")
 
     if page == "🏠 Home":
         render_home()
